@@ -9,20 +9,16 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="clientes")
+@Table(name = "clientes")
 @Getter
 @Setter
 
 public class Cliente {
-	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	@Id // Serve para indicar que é a Primary Key
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Serve para autoincremento
 	private long codigo;
 	private String nome;
 	private int idade;
 	private String cidade;
-	
-	
-	
-	
-	
+
 }
