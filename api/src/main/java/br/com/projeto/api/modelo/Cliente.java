@@ -12,7 +12,6 @@ import lombok.Setter;
 @Table(name = "clientes")
 @Getter
 @Setter
-
 public class Cliente {
 	@Id // Serve para indicar que é a Primary Key
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // Serve para autoincremento
